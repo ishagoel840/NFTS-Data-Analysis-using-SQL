@@ -10,6 +10,22 @@ In this project, you’ll be tasked to analyze real-world NFT data.
 That data set is a sales data set of one of the most famous NFT projects, Cryptopunks. Meaning each row of the data set represents a sale of an NFT. The data includes sales from January 1st, 2018 to December 31st, 2021. The table has several columns including the buyer address, the ETH price, the price in U.S. dollars, the seller’s address, the date, the time, the NFT ID, the transaction hash, and the NFT name.
 You might not understand all the jargon around the NFT space, but you should be able to infer enough to answer the following prompts.
 
+## Dataset Overview
+###### Total Entries: The dataset contains 19,920 entries.
+###### Columns: There are 10 columns in the dataset:
+
+1. buyer_address : the address that owned the NFT after the Transfer event denoted by this row in the relation
+2. eth_price :  the price of Ethereum.
+3. usd_price : the price in US dollars.
+4. seller_address : the address that owned the NFT before the Transfer event denoted by this row in the relation 
+5. day : day of Transaction.
+6. utc_timestamp : timestamps in Coordinated Universal Time (UTC) format.
+7. token_id : the identifier that represents the NFT that the event describes within the context of the smart contract with address 
+8. transaction_hash : the hash of the Ethereum transaction in which we observed the event
+9. name : The name of the NFT collection.
+10. wrapped_punk : tokenized representation of ownership in a CryptoPunk.
+
+
 ### Questions to Answer:
 1. How many sales occurred during this time period? 
 2. Return the top 5 most expensive transactions (by USD price) for this data set. Return the name, ETH price, and USD price, as well as the date.
